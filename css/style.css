@@ -1,0 +1,158 @@
+body {
+    background:#f2f2f2;
+    background: url('../images/bg-bottom.svg') no-repeat;
+    background: url('../images/bg-top.svg')no-repeat;
+    font-size: 19px;
+    font-family:  'Roboto', sans-serif;
+    color: #333;
+    margin:0;
+}
+
+/* The switch - the box around the slider -----------------------------------------*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #4747d1;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #4747d1;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.toggler {
+    height: 34px ;
+    line-height: 34px;
+}
+
+/*---------------------------------------------------------------------------- */
+
+.container {
+    text-align: center;
+    
+}
+
+.headin {
+    margin: 80px 0;
+}
+
+.plan {
+    background: #fff;
+    width: 85%;
+    margin: 35px auto;
+    padding: 20px 10px;
+    border-radius: 9px;
+    box-shadow: 0px 2px 15px #888;
+    
+}
+
+.inner {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.cash {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.bor {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.plan p {
+    padding: 20px 0 ;
+    margin:0;
+}
+
+.plan button {
+    width:100%;
+    height:47px;
+    padding:0;
+    margin: 35px auto 15px auto; 
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #7070db , #4747d1);
+    color: #fff;
+    font-size: 17px;
+}
+
+.year {
+    display: none;
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media (min-width: 790px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    body{
+        padding: 0 35px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+
+

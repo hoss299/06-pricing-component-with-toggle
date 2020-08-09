@@ -1,0 +1,6 @@
+.active-card:hover {
+  background: linear-gradient(to right, #7070db, #4747d1);
+  color: #fff; }
+  .active-card:hover .active-btn {
+    background: #fff;
+    color: #4747d1; }
